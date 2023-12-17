@@ -1,0 +1,229 @@
+@import url('root.css');
+/* Nav Starts */
+nav {
+    width: 100%;
+    padding: 1.5rem .8rem;
+    background: linear-gradient(0deg, var(--dark) 0%, var(--gray-dark) 100%);
+}
+
+/* Nav Container */
+.nav_cont {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* Nav Items */
+
+.nav_items {
+    height: 100%;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+/* Nav Menu */
+.nav_menu>i {
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+/* Logo */
+.logo {
+    height: 35px;
+    width: 97px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+/* Random Button */
+.random,
+.language {
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: .3rem;
+    /* gonna use tooltip in future */
+    /* https://www.w3schools.com/css/css_tooltip.asp */
+
+}
+
+.random>i {
+    color: var(--neon);
+    font-size: 1.2rem;
+}
+
+.random span,
+.share_counter span {
+    color: var(--light);
+    font-size: .8rem;
+}
+
+/* Language Selectors */
+
+.language {
+    height: 2.5rem;
+    width: 4.625rem;
+    /* border: 1px solid white; */
+    text-align: center;
+    /* Gonna use tooltip in future */
+    /* https://www.w3schools.com/css/css_tooltip.asp */
+}
+
+.lang_button {
+    border-radius: 4px;
+}
+
+.lang_button div {
+    height: 1.725rem;
+    width: 1.725rem;
+    text-align: center;
+}
+
+.lang_button div span {
+    font-size: .8rem;
+}
+
+.lang_button div:nth-child(1) {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.lang_button div:nth-child(2) {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.active {
+    background-color: var(--neon);
+}
+
+.active span {
+    color: var(--dark);
+}
+
+.passive {
+    background-color: var(--gray);
+}
+
+.passive span {
+    color: var(--light);
+}
+
+.language>span {
+    color: var(--light);
+    font-size: .7rem;
+}
+
+
+/* Share counter */
+.share_counter {
+    flex-direction: column;
+}
+
+.share_counter span {
+    color: var(--gray);
+}
+
+.share_counter span:nth-child(1) {
+    font-size: .9rem;
+}
+
+/* Social Container */
+.social_link_cont {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-btn {
+    border: none;
+    width: 120px;
+    height: 32px;
+    border-radius: 4px;
+    line-height: 32px;
+    padding: 0 10px;
+    transition: all ease-in-out .3s;
+}
+
+.social_link_cont button a {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--light);
+}
+
+.social_link_cont button a span {
+    margin-left: .5rem;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+}
+
+#b-facebook,
+#b-messenger {
+    background-color: #3B5995;
+}
+
+#b-twitter {
+    background-color: #060607;
+}
+
+#b-reddit {
+    background-color: #FF4500;
+    color: var(--light);
+}
+
+#b-whatsapp {
+    background-color: #25D366;
+}
+
+#b-telegram {
+    background-color: #0673AA;
+    color: var(--light);
+}
+
+/* Nav Social Contaienr Hover Effect */
+.social-btn:hover {
+    margin-bottom: .5rem;
+}
+
+
+/* Login button */
+.login {
+    width: 71px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--neon);
+    border: none;
+    color: var(--dark);
+}
+
+.login>a {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark);
+}
+
+/* -----------------------------------------------------------------> */
+/* Search bar section */
+.searchbar {
+    height: 5vh;
+    width: 100%;
+    background-color: var(--dark);
+    position: relative;
+    margin-bottom: 2vh;
+}
+
+.searchbar>div>i {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1.5rem;
+    color: var(--white);
+}

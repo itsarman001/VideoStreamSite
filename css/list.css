@@ -1,0 +1,82 @@
+@import url('root.css');
+
+.list-section {
+    /* background: linear-gradient(to top, #4A4B51 0, #202125 99%); */
+    width: 100%;
+    height: 100vh;
+    color: var(--white);
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    background-color: var(--dark);
+
+}
+
+.list-cont {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: .5rem 0;
+}
+
+.list {
+    width: 24%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4A4B51;
+    margin: 0 0 0 .75rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+.list-head h3 {
+    color: var(--neon);
+
+}
+
+.list>li {
+    list-style-type: none;
+    margin-bottom: .5rem;
+    padding: .3rem .2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: .5rem;
+}
+
+.list>li>img {
+    height: 20%;
+    width: 20%;
+}
+
+.text>h3 {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.list>li:nth-child(even) {
+    background-color: #414248;
+}
+
+.list>li:nth-last-child(1) {
+    align-items: center;
+    justify-content: center;
+}
+
+.nest-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: .3rem;
+}
+
+.nest-list li {
+    list-style-type: disc;
+
+}
+
+.nest-list span,
+.nest-list li {
+    font-size: .8rem;
+}

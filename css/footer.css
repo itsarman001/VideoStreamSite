@@ -1,0 +1,94 @@
+@import url('root.css');
+
+.footer {
+    width: 100%;
+    background-image: url('../resources/footer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-top {
+    padding: 1rem 0 .8rem;
+    width: 15%;
+    /* background-color: blue; */
+    border-bottom: .1rem solid #ffffff71;
+}
+
+.footer-top a img {
+    width: 70%;
+}
+
+.footer-az {
+    margin-top: 1rem;
+    color: var(--white);
+    width: 80%;
+}
+
+.faz-top { margin-bottom: .8rem;}
+
+.ftaz {
+    /* background-color: blue; */
+    padding: 0 .5rem 0 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-right: .1rem solid white;
+    margin-right: .5rem;
+}
+
+.faz-top span:nth-last-child(1) {
+    font-size: .9rem;
+}
+
+.az-list {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.az-list li {
+    list-style-type: none;
+    background-color: var(--gray);
+    color: var(--white);
+    padding: .4rem .6rem;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--white);
+    transition: ease .3s;
+}
+
+.az-list li a {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.az-list li:hover { background-color: var(--neon);}
+.az-list li:hover a {
+    color: var(--dark);
+}
+
+
+.footer-links {
+    margin: 1rem 0;
+}
+.footer-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: .8rem;
+    font-size: .8rem;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.about-text, .copyright {
+    font-size: .8rem;
+    color: #d3d3d3c7;
+    margin-bottom: .5rem;
+}
+
+.copyright { color: var(--white); }

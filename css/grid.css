@@ -1,0 +1,331 @@
+@import url('root.css');
+
+.grid-section {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+    position: relative;
+    background-color: var(--dark);
+}
+
+.page3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.recent-update {
+    width: 75%;
+}
+
+.ru-head {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.ru-head-inner {
+    width: 40%;
+}
+
+.ru-head,
+.ru-head-inner {
+    display: flex;
+    align-items: center;
+}
+
+.ru-heading {
+    color: var(--neon);
+    margin-right: 1.9rem;
+    white-space: nowrap;
+}
+
+.ru-nav {
+    width: 40%;
+    background-color: var(--secondary);
+    padding: .5rem;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ru-nav span a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0 .5rem;
+}
+
+.ru-nav span:nth-child(2) {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.ru-head a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+/* ru-gallery */
+.ru-gallery {
+    width: auto;
+    min-height: 100vh;
+    margin-top: .8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    flex: 0 0 20%;
+}
+
+.ru-card {
+    height: 400px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.film-poster {
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+
+.film-poster a img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.ru-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: inset 0 -50px 50px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.play-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 3rem;
+    color: white;
+    opacity: 0;
+}
+
+.ru-overlay:hover ~ .play-icon {
+    opacity: 1;
+}
+
+.ru-overlay:hover {
+    box-shadow: inset 0 -100px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.ru-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--gray-dark);
+    position: absolute;
+    z-index: 3;
+    bottom: .3rem;
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 70%;
+}
+
+.caption div i {
+    margin-right: .3rem;
+}
+
+.caption div,
+.episodes span {
+    padding: .2rem .3rem;
+    font-size: .6rem;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.caption div:nth-child(2) {
+    background-color: var(--info);
+}
+
+.ru-card-info {
+    background-color: var(--gray-dark);
+    height: 25%;
+    padding: 1rem .4rem;
+    color: var(--white);
+}
+
+.title ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: .5rem;
+    font-size: .8rem;
+}
+
+/* Genre Section */
+.right-section {
+    width: 25%;
+}
+
+.genre { width: 100%; }
+
+.genre-inner {
+    background-color: var(--gray-dark);
+    padding: 1rem;
+}
+
+.genre-heading {
+    color: var(--neon);
+    padding: 0 0 1rem 0;
+    white-space: nowrap;
+}
+
+.genre-links-cont {
+    
+    width: 100%
+}
+
+.genre-links {
+    width: 100%
+}
+
+.genre-links ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.genre-links ul li {
+    /* display: block; */
+    list-style-type: none;
+    margin-bottom: .5rem;
+    color: var(--white);
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .9rem;
+}
+
+.genre-links ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.genre-btn {
+    width: 100%;
+    padding: .8rem;
+    margin-top: .5rem;
+    background-color: var(--gray);
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Most Viewed */
+.most-viewed {
+    margin-top: 1.8rem;
+}
+/* most viewed Inner */
+.mv-inner {
+    background-color: var(--gray-dark);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* most viewed nav */
+.mv-nav {
+    width: 100%;
+    background-color: var(--gray-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border-radius: 8px; */
+    /* overflow: hidden; */
+    color: var(--white);
+}
+
+.mv-nav>span {
+    width: calc(100% / 3);
+    padding: .7rem 0;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mv-nav-active {
+    background-color: var(--gray);
+    color: var(--neon);
+}
+
+.mv-inner ul li {
+    padding: 1rem .5rem .3rem;
+    align-items: center;
+}
+
+.mv-inner ul li, .mv-content {
+    display: flex;
+    color: var(--white);
+}
+
+.mv-content {
+    border-bottom: 1px solid #ffffffab;
+    width: 80%;
+    padding-bottom: .3rem;
+}
+
+.mv-inner ul li>span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .2rem;
+    margin-right: 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--neon);
+}
+
+.poster img {
+    width: 80%;
+}
+
+.mvc-inner {
+    width: 100%;
+}
+
+.mvc-title {
+    margin-bottom: .5rem;
+}
+
+.mvc-icons {
+    font-size: .8rem;
+}
+
+.mvc-icons>span {
+    margin-right: .5rem;
+}
